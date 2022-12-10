@@ -1,0 +1,103 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "autor": "typicode"
+    },
+    {
+      "id": "kHzTdKz",
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "address": ""
+    },
+    {
+      "id": "BGWSR1R",
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "address": ""
+    },
+    {
+      "id": "YjVqC2o",
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "address": ""
+    },
+    {
+      "id": "krvpNeZ",
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "address": ""
+    },
+    {
+      "id": "tV0CIsu",
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "address": ""
+    },
+    {
+      "id": "5ZuKZik",
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "address": ""
+    },
+    {
+      "id": "_eoigiV",
+      "name": null,
+      "email": null,
+      "mobile": null,
+      "address": null
+    },
+    {
+      "id": "jxDqyd4",
+      "name": "as",
+      "email": "sdsd",
+      "mobile": "sadasd",
+      "address": "sadasd"
+    },
+    {
+      "id": "1OrnN_v",
+      "name": "akshay",
+      "email": "sdash @gmail.com",
+      "mobile": "7262637362",
+      "address": "test"
+    },
+    {
+      "id": "_rkft4A",
+      "name": "dssc",
+      "email": "dssdcsdc",
+      "mobile": "2e32e32e2",
+      "address": "32csdcsdc"
+    },
+    {
+      "id": "T5HK9oi",
+      "name": "dssc",
+      "email": "dssdc",
+      "mobile": "sdcsd",
+      "address": "dcsdc"
+    },
+    {
+      "id": "e11VSju",
+      "name": "A",
+      "email": "Test",
+      "mobile": "12e32",
+      "address": "32e23e"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

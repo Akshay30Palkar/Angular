@@ -1,0 +1,87 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h3>Restaurant Recoed Application</h3>
+        <div class="d-flex">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Restaurent</button>
+        </div>
+    </div>
+</nav>
+<!--Jumbotron-->
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-fold">Restaurent Records Management</h1>
+        <p class="col-md-8 fs-4">You Can Save Records of Restaurent Using Angular 12</p>
+        <a class="btn btn-primary btn-lg" type="button">Testycodeiz</a>
+    </div>
+</div>
+<!--close-->
+<!--Table Code-->
+<table class="table mt-4">
+    <thead>
+    <tr>
+        <th scope="col">Restaurent ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Address</th>
+        <th scope="col">Services</th>
+        <th scope="col">Action</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let data of allRestaurantData">
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.mobile}}</td>
+        <td>{{data.address}}</td>
+        <td>{{data.services}}</td>
+        <td>
+            <button class="btn btn-info">Edit</button>&nbsp;
+            <button class="btn btn-info">Delete</button>
+        </td>
+    </tr>
+</tbody>
+</table>
+<!--close-->
+<!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Name</label>
+                  <input type="text" formControlName="name" placeholder="Restaurent Name Here" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Email Id</label>
+
+                  <input type="email" formControlName="email" class="form-control" placeholder="Restaurent Email Id Here" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+                    <input type="tel" formControlName="mobile" class="form-control" placeholder="Restaurent Mobile Number Here" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Address</label>
+                    <input type="text" formControlName="address" class="form-control" placeholder="Restaurent Address Here" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Service</label>
+                    <input type="text" formControlName="services" class="form-control" placeholder="Restaurent Service Here" id="exampleInputPassword1">
+                  </div>
+                        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="addRestaurant()">Add Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
